@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>台一不動產 2026 尾牙快樂入座查詢</title>
+  <title>台一不動產尾牙晚宴座位查詢</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
   </style>
 </head>
 <body>
-  <h1>🎊 台一不動產尾牙晚宴查詢座位 🎊</h1>
+  <h1>🎊 台一不動產尾牙晚宴座位查詢 🎊</h1>
   <p>請輸入員工姓名查詢您的桌號與人數：</p>
   <input type="text" id="nameInput" placeholder="例如：張舒晴">
   <button onclick="checkSeat()">🔍 查詢我的座位</button>
@@ -76,8 +76,7 @@
       "石羚": "第13桌共1位",
       "江沂宸": "第13桌共1位",
       "沈瑜萱": "第13桌共1位",
-      "陳鈺惇": "第13桌共2位",
-      "鎧華助理": "第13桌共1位",
+      "陳鈺惇": "第13桌共3位",
       "塗佩珍": "第15桌共3位",
       "徐姿雯": "第15桌共2位",
       "葉璟儀": "第15桌共1位",
@@ -119,7 +118,7 @@
       const name = document.getElementById('nameInput').value.trim();
       const result = document.getElementById('result');
       if(seatList[name]) {
-        result.innerHTML = `🎉 ${name} 您的座位是：${seatList[name]} 🎉`;
+        result.innerHTML = `🎉 ${name} 您的座位在：${seatList[name]} 🎉`;
       } else {
         result.innerHTML = `😅 查無此員工姓名，請確認輸入正確`;
       }
